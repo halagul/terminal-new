@@ -93,11 +93,33 @@
 //     </div>
 //   );
 // }
+// export default function HomePage() {
+//   return (
+//     <div>
+//       <h1>Welcome to Website4!</h1>
+//       <p>This is a static site using Next.js 14.</p>
+//     </div>
+//   );
+// }
 export default function HomePage() {
   return (
-    <div>
-      <h1>Welcome to Website4!</h1>
-      <p>This is a static site using Next.js 14.</p>
-    </div>
+    <main>
+      <section className="hero">
+        <h1>FINGER LICKIN’ GOOD</h1>
+      </section>
+      <section style={{ padding: '2rem' }}>
+        <h2>Featured Items</h2>
+        <div style={{ display: 'flex', gap: '2rem', marginTop: '1rem' }}>
+          <div>
+            <img src="/images/deal1.jpg" alt="Deal 1" width="300" />
+            <h3>Bucket Meal</h3>
+          </div>
+          <div>
+            <img src="/images/deal2.jpg" alt="Deal 2" width="300" />
+            <h3>Chicken Combo</h3>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
